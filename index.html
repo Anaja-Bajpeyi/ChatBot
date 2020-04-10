@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <base target="_blank">
+  <title>Chatbot</title>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <meta name="viewport" content="width=device-width" initial-scale="1">
+  <link  href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+<body>
+         </style>
+  <div class="wrapper" style="height:100%; display:flex; flex-direction:column-reverse; min-height: 100px; overflow-y: auto;">
+    <div id="dialogue" >
+    </div>
+  </div>
+    <form class="action" onSubmit="return chatbot.sendMessage()">
+      <div class="text-box">
+        <input type="text" name="message" id="message" autocomplete="off" autofocus="autofocus" placeholder="Please wait... loading..." >
+        <input class="send-button" type="submit" value=">">
+      </div>
+
+</form>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
+  <script src="chatbot.js"></script>
+  <script src="avas1.js"></script>
+</body>
+</html>
